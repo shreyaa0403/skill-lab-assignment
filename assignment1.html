@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Example</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Bootstrap Example</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#carousel">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#accordion">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#cards">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Carousel -->
+<div id="carousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel" data-slide-to="1"></li>
+    <li data-target="#carousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="https://www.bsr.org/images/heroes/bsr-focus-nature-hero.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://c4.wallpaperflare.com/wallpaper/614/675/661/beautiful-pictures-nature-waterfall-wallpaper-preview.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://wallpapers.com/images/featured/nature-2ygv7ssy2k0lxlzu.jpg" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<!-- Accordion -->
+<div id="accordion" class="container mt-4">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              google
+            </button>
+          </h5>
+        </div>
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body">
+            Google LLC is an American multinational corporation and technology company focusing on online advertising, search engine technology, cloud computing, computer software, quantum computing, e-commerce, consumer electronics, and artificial intelligence.
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Microsoft
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body">
+            Microsoft Corporation is an American multinational corporation and technology company headquartered in Redmond, Washington. Microsoft's best-known software products are the Windows line of operating systems, the Microsoft 365 suite of productivity applications, and the Edge web browser.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Button -->
+<div class="container mt-4">
+  <button type="button" class="btn btn-primary btn-lg btn-block">Primary Button</button>
+</div>
+
+<!-- Cards -->
+<div id="cards" class="container mt-4">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <img class="card-img-top" src="data:image/jpeg;base64,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" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card 1</h5>
+          <p class="card-text">Mikii</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF08wbZeJDlwbOTkKlnNYcdKve_Y2lCasOEQ&s" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card 2</h5>
+          <p class="card-text">ginger</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzX9A_f_jDYExfolsAhVX7IgctPaA9qU0KUg&s" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card 3</h5>
+          <p class="card-text">daisy.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div id="contact" class="container mt-4">
+  <h2>Contact Us</h2>
+  <p>Feel free to reach out to us!</p>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
